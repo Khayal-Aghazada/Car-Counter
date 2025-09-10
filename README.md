@@ -99,14 +99,6 @@ python -m apps.car_counter --mirror 0
 python -m apps.car_counter --mirror 0
 ```
 
-## Contributing
-
-Contributions are welcome! Please open issues or pull requests for suggestions and improvements.
-
-## License
-
-MIT License
-
 ## Acknowledgments
 
 - Built with OpenCV and Python
@@ -115,3 +107,4 @@ MIT License
 ---
 
 *For more details, see the code and comments in each file.*
+
