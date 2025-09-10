@@ -1,17 +1,32 @@
 # Car Counter CV
 
-A Python-based computer vision application for counting cars in video streams using modular, reusable components.
+![Project Demo](assets/images/car_counter_demo.jpg)
+*<p align="center">(Add a screenshot or GIF of your car counter in action here. Place your image at <code>assets/images/car_counter_demo.jpg</code>.)</p>*
 
-## Overview
+## About the Project
 
-This project provides a robust car counting tool built with OpenCV and custom tracking modules. The main script, `apps/car_counter.py`, leverages reusable code from the `modules` directory, making it easy to extend or adapt for other object counting tasks.
+**Car Counter CV** is a Python-based computer vision application that automatically detects and counts cars in video streams. Designed for traffic analysis, smart city applications, and educational purposes, this tool leverages OpenCV and custom tracking modules to provide accurate, real-time vehicle counting from both video files and live camera feeds.
+
+### What Does It Do?
+- **Detects cars** in each frame of a video or webcam stream using advanced image processing and object detection techniques.
+- **Tracks vehicles** as they move through the frame, ensuring each car is counted only once.
+- **Counts cars** crossing a virtual line or region, providing live statistics for traffic monitoring or data collection.
+- **Visualizes results** by overlaying bounding boxes, counts, and other helpful graphics on the video output.
+
+This project is modular and easy to extend, making it suitable for:
+- Traffic flow analysis
+- Parking lot management
+- Smart city research
+- Educational demonstrations of computer vision techniques
 
 ## Features
 
-- Real-time car detection and counting from video files or webcam streams
-- Modular codebase for easy customization and extension
-- Example video assets included for quick testing
-- Designed for clarity and educational use
+- 🚗 **Real-time car detection and counting**
+- 🎥 Works with video files or live webcam streams
+- 🧩 Modular codebase for easy customization and extension
+- 🏁 Virtual counting lines or regions
+- 📦 Example video assets included for quick testing
+- 📝 Well-commented code for learning and adaptation
 
 ## Project Structure
 
@@ -24,6 +39,7 @@ cv_lib/
     ...                    # Core reusable modules (tracking, drawing, etc.)
   assets/
     demo_video/            # Example videos for testing
+    images/                # Place for screenshots or demo images
     ...
   ml/
     ...                    # Machine learning assets (if needed)
