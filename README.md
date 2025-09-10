@@ -1,23 +1,34 @@
 # Car Counter CV
 
-![Project Demo](assets/images/car_counter_demo.jpg)
-*<p align="center">(Add a screenshot or GIF of your car counter in action here. Place your image at <code>assets/images/car_counter_demo.jpg</code>.)</p>*
+<img width="1284" height="753" alt="image" src="https://github.com/user-attachments/assets/02764988-d646-4821-9bd5-68b8abf6e94b" />
+
 
 ## About the Project
 
-**Car Counter CV** is a Python-based computer vision application that automatically detects and counts cars in video streams. Designed for traffic analysis, smart city applications, and educational purposes, this tool leverages OpenCV and custom tracking modules to provide accurate, real-time vehicle counting from both video files and live camera feeds.
+**Car Counter CV** is a Python-based computer vision application that automatically detects and counts cars in video streams. It is designed for traffic analysis, smart city applications, parking lot management, and educational demonstrations. The tool leverages OpenCV and custom tracking modules to provide accurate, real-time vehicle counting from both video files and live camera feeds.
+
+When you run the car counter, it processes each frame of your video or webcam stream, detects all visible cars, tracks their movement across frames, and counts each unique car as it crosses a virtual counting line or region. The application overlays bounding boxes, tracking IDs, and live car counts directly onto the video, giving you immediate visual feedback and statistics. This makes it ideal for monitoring traffic flow, collecting data for research, or showcasing computer vision techniques in action.
 
 ### What Does It Do?
-- **Detects cars** in each frame of a video or webcam stream using advanced image processing and object detection techniques.
-- **Tracks vehicles** as they move through the frame, ensuring each car is counted only once.
-- **Counts cars** crossing a virtual line or region, providing live statistics for traffic monitoring or data collection.
-- **Visualizes results** by overlaying bounding boxes, counts, and other helpful graphics on the video output.
+- **Reads video input** from a file or webcam.
+- **Detects cars** in each frame using advanced image processing and object detection techniques.
+- **Tracks each vehicle** as it moves through the scene, assigning a unique ID to every car.
+- **Counts cars** as they cross a user-defined virtual line or region, ensuring each car is only counted once (no double-counting).
+- **Displays results** by overlaying bounding boxes, tracking paths, and live car counts on the video output.
+- **Provides live statistics** for traffic monitoring, research, or educational use.
 
 This project is modular and easy to extend, making it suitable for:
 - Traffic flow analysis
 - Parking lot management
 - Smart city research
 - Educational demonstrations of computer vision techniques
+
+### How it Works
+1. **Video Input:** The program loads a video file or connects to a webcam stream.
+2. **Car Detection:** Each frame is analyzed to detect cars using object detection algorithms.
+3. **Object Tracking:** Detected cars are tracked across frames, so the same car keeps its ID as it moves.
+4. **Counting Logic:** A virtual line or region is defined in the frame. When a tracked car crosses this line, the counter increases by one.
+5. **Visualization:** The output video shows bounding boxes, tracking IDs, and the current car count, making it easy to see the system working in real time.
 
 ## Features
 
